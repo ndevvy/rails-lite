@@ -19,7 +19,7 @@ module Phase6
     # instantiate controller and call controller action
     def run(req, res)
       params = grab_route_params(req)
-      controller = controller_class.new(req, res, params).invoke_action(action_name)
+      controller_class.new(req, res, params).invoke_action(action_name)
     end
 
     def grab_route_params(req)
