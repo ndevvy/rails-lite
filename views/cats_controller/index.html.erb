@@ -1,3 +1,8 @@
 <h1>ALL THE CATS</h1>
+  <%= flash[:messages].join("<br>") if flash[:messages] %>
+<% if @cats %>
 <pre><%= @cats.to_s %></pre>
+<% end %>
+
+
 <a href="/cats/new">New cat!</a>
