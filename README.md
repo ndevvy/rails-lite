@@ -15,6 +15,10 @@ This is an App Academy project in which I implemented the basic functionality of
   - Parses query string and request body params using URI::decode_www_form
   - Parses keys and builds nested hashes
 
+### Flash
+  - Stores information (such as messages or errors), to be accessed & rendered by the views
+  - Can persist data through one redirect (by storing in a cookie for the next Flash to pick up) or show it on render (by storing in an instance variable that won't persist in a cookie)
+
 ## Router
   - Builds out default Routes for HTTP methods
   - Matches the correct route to the request, based on path and HTTP method
@@ -22,7 +26,3 @@ This is an App Academy project in which I implemented the basic functionality of
 ### Route
   - Parses route params using a given regular expression for the path
   - Instantiates the appropriate Controller, passing it the action to run, along with any route params
-
-## Flash
-  - Stores information (such as messages or errors), to be accessed & rendered by the views
-  - Can persist data through one redirect (by storing in a cookie for the next Flash to pick up) or show it on render (by storing in an instance variable that won't persist in a cookie)
