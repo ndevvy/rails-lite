@@ -1,5 +1,5 @@
 # Rails Lite
-This is an App Academy project in which I implemented the basic functionality of Rails's controller base class and router. See /lib/ for the implementations.
+A metaprogramming project in which I wrote the basic functionality of Rails's controller base class and router. See /lib/ for the implementations.
 
 ## ControllerBase
   - Can redirect or render and tracks whether a response has already been built such that render and redirect can only happen once per controller action
